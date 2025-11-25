@@ -1,0 +1,138 @@
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 900; /* Supports range of weights */
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+h1 {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+p {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+.blog-card{
+    width: 100%;
+    height: 100dvh;
+    background-color: #F4C430;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    width: 100%;
+    height: 100dvh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para{
+    font-family: 'Figtree';
+    background-color: #FDB933;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+.paragraph2{
+    font-family: 'Figtree';
+    color: #6C6C6C; /* grayish blue */
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.card{
+    width: 18%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    border: 1px solid black;
+    box-shadow: 10px 10px 1px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    background-color: #f8e5aa;
+    border: 2px solid #977d2f;
+    box-shadow: 10px 10px 1px #977d2f;
+    color: #977d2f;
+}
+
+.image{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-image{
+    width: 12%;
+    height: auto;
+}
+
+.footer-image img{
+    width: 35px;
+    height: auto;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 50%;
+    }
+    .para{
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card{
+        width: 70%;
+    }
+    .para{
+        width: 40%;
+    }
+}
+
+
